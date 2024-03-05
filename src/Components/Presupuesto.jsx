@@ -28,7 +28,8 @@ export const Presupuesto = ({presupuesto, setPresupuesto, setIsValid}) => {
         <form onSubmit={handlePresupuesto} className='formulario'>
             <div className='campo'>
                 <label htmlFor='presupuesto'>Presupuesto</label>
-                <input id="presupuesto" type='number' className='nuevo-presupuesto' placeholder='Agrega tu presupuesto' 
+                <input id="presupuesto" type='number' className='nuevo-presupuesto' 
+     
                     value={presupuesto}
                     onChange={e => setPresupuesto(Number(e.target.value))}
                 />
